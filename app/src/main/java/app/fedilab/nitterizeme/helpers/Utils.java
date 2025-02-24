@@ -100,7 +100,7 @@ public class Utils {
     public static final Pattern youtubePattern = Pattern.compile("(www\\.|m\\.)?(youtube\\.com|youtu\\.be|youtube-nocookie\\.com)/(((?!([\"'<])).)*)");
     public static final Pattern redditPattern = Pattern.compile("(www\\.|m\\.)?(reddit\\.com|preview\\.redd\\.it|i\\.redd\\.it)/(((?!([\"'<])).)*)");
     public static final Pattern redditSubdomainPattern = Pattern.compile("([\\w_-]+)\\.reddit.com/?(?!r/)(((?!([\"'<])).)*)");
-    public static final Pattern nitterPattern = Pattern.compile("(mobile\\.|www\\.)?twitter.com([\\w-/]+)");
+    public static final Pattern nitterPattern = Pattern.compile("(mobile\\.|www\\.)?(?:twitter.com|x.com)([\\w-/]+)");
     public static final Pattern bibliogramPostPattern = Pattern.compile("(m\\.|www\\.)?instagram.com(/p/[\\w-/]+)");
     public static final Pattern scriberipPattern = Pattern.compile("(www\\.)?medium.com/(((?!([\"'<])).)*)");
     public static final Pattern scriberipSubdomainPattern = Pattern.compile("([\\w_-]+)\\.medium.com/(((?!([\"'<])).)*)");
@@ -131,6 +131,8 @@ public class Utils {
             "ga_content",
             "ga_campaign",
             "ga_place",
+            "gclid",
+            "feature",
             "yclid",
             "_openstat",
             "fb_action_ids",

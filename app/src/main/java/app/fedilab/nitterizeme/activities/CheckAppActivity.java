@@ -48,7 +48,10 @@ public class CheckAppActivity extends AppCompatActivity {
             "mobile.twitter.com",
             "www.twitter.com",
             "pbs.twimg.com",
-            "pic.twitter.com"
+            "pic.twitter.com",
+            "x.com",
+            "www.x.com",
+            "mobile.x.com"
     };
     public static String[] instagram_domains = {
             "instagram.com",
