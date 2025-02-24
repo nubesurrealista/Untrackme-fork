@@ -76,6 +76,9 @@
                 <data android:host="mobile.twitter.com" />
                 <data android:host="www.twitter.com" />
                 <data android:host="twitter.com" />
+                <data android:host="mobile.x.com" />
+                <data android:host="www.x.com" />
+                <data android:host="x.com" />
                 <data android:host="pbs.twimg.com" />
                 <data android:host="pic.twitter.com" />
 
@@ -185,6 +188,9 @@
                 <data android:host="mobile.twitter.com" />
                 <data android:host="www.twitter.com" />
                 <data android:host="twitter.com" />
+                <data android:host="mobile.x.com" />
+                <data android:host="www.x.com" />
+                <data android:host="x.com" />
                 <data android:host="pbs.twimg.com" />
 
                 <!-- YOUTUBE URLs  -->
