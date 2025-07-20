@@ -6,23 +6,13 @@ pluginManagement {
     }
 }
 
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.11.1'
-    }
-}
-
-allprojects {
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
     }
 }
 
-tasks.register("clean", Delete) {
-    delete rootProject.buildDir
-}
+rootProject.name = "nitterizeme"
+include(":app")
