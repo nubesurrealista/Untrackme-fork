@@ -60,7 +60,7 @@ public class AboutActivity extends AppCompatActivity {
         content.setSpan(new ForegroundColorSpan(ContextCompat.getColor(AboutActivity.this, R.color.colorAccent)), 0, content.length(), 0);
         binding.developerMastodon.setText(content);
         binding.developerMastodon.setOnClickListener(v -> {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://toot.fedilab.app/@apps"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://verse.averagedood.xyz/@nube"));
             startActivity(browserIntent);
         });
 
@@ -77,7 +77,7 @@ public class AboutActivity extends AppCompatActivity {
         content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
         binding.github.setText(content);
         binding.github.setOnClickListener(v -> {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/stom79"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/nubesurrealista"));
             startActivity(browserIntent);
         });
 
@@ -95,7 +95,7 @@ public class AboutActivity extends AppCompatActivity {
         content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
         binding.codeberg.setText(content);
         binding.codeberg.setOnClickListener(v -> {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://codeberg.org/tom79"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://codeberg.org/nube"));
             startActivity(browserIntent);
         });
 
@@ -110,7 +110,7 @@ public class AboutActivity extends AppCompatActivity {
         });
 
         binding.howTo.setOnClickListener(v -> {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://fedilab.app/wiki/untrackme/"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/nubesurrealista/Untrackme-fork/blob/develop/wiki.md"));
             startActivity(browserIntent);
         });
 
