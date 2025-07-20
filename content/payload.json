@@ -1,0 +1,48 @@
+{
+  "invidious": [
+    {"domain": "inv.nadeko.net", "cloudflare": false, "locale": "en"}
+  ],
+  "nitter": [
+    {"domain": "nitter.net", "cloudflare": false, "locale": "en"},
+    {"domain": "nitter.privacyredirect.com", "cloudflare": false, "locale": "en"},
+    {"domain": "nitter.tiekoetter.com", "cloudflare": false, "locale": "de"}
+  ],
+  "bibliogram": [
+    {"domain": "bibliogram.art", "cloudflare": false, "locale": "au"},
+    {"domain": "bibliogram.snopyta.org", "cloudflare": false, "locale": "fi"},
+    {"domain": "bibliogram.pussthecat.org", "cloudflare": false, "locale": "de"}
+  ],
+  "teddit": [
+    {"domain": "eu.safereddit.com", "cloudflare": false, "locale": "eu"},
+    {"domain": "red.artemislena.eu", "cloudflare": false, "locale": "eu"},
+    {"domain": "reddit.adminforge.de", "cloudflare": false, "locale": "de"},
+    {"domain": "reddit.nerdvpn.de", "cloudflare": false, "locale": "de"},
+    {"domain": "redlib.4o1x5.dev", "cloudflare": false, "locale": "dev"},
+    {"domain": "redlib.catsarch.com", "cloudflare": false, "locale": "com"},
+    {"domain": "redlib.privacyredirect.com", "cloudflare": false, "locale": "com"},
+    {"domain": "redlib.privadency.com", "cloudflare": false, "locale": "com"},
+    {"domain": "rl.blitzw.in", "cloudflare": false, "locale": "in"},
+    {"domain": "rl.bloat.cat", "cloudflare": false, "locale": "cat"},
+    {"domain": "safereddit.com", "cloudflare": false, "locale": "com"}
+  ],
+  "proxitok": [
+    {"domain": "proxitok.pussthecat.org", "cloudflare": false, "locale": "de"},
+    {"domain": "tok.artemislena.eu", "cloudflare": false, "locale": "eu"},
+    {"domain": "cringe.whateveritworks.org", "cloudflare": false, "locale": "org"},
+    {"domain": "proxitok.pabloferreiro.es", "cloudflare": false, "locale": "es"}
+  ],
+  "scribe": [
+    {"domain": "scribe.rip", "cloudflare": false, "locale": "rip"},
+    {"domain": "m.opnxng.com", "cloudflare": false, "locale": "com"},
+    {"domain": "scribe.r4fo.com", "cloudflare": false, "locale": "com"},
+    {"domain": "scribe.privacyredirect.com", "cloudflare": false, "locale": "com"}
+  ],
+  "wikiless": [
+    {"domain": "wiki.owo.si", "cloudflare": false, "locale": "si"},
+    {"domain": "wiki.adminforge.de", "cloudflare": false, "locale": "de"},
+    {"domain": "wiki.froth.zone", "cloudflare": false, "locale": "zone"},
+    {"domain": "wikiless.lunar.icu", "cloudflare": false, "locale": "icu"},
+    {"domain": "wikiless.northboot.xyz", "cloudflare": false, "locale": "xyz"},
+    {"domain": "wikiless.tiekoetter.com", "cloudflare": false, "locale": "de"}
+  ]
+}
