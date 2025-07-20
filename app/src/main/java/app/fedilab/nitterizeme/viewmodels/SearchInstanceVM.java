@@ -85,7 +85,7 @@ public class SearchInstanceVM extends AndroidViewModel {
         HttpsURLConnection httpsURLConnection;
         ArrayList<Instance> instances = new ArrayList<>();
         try {
-            String instances_url = "https://fedilab.app/untrackme_instances/payload_3.json";
+            String instances_url = "https://nubesurrealista.github.io/Untrackme-fork/content/payload.json";
             URL url = new URL(instances_url);
             httpsURLConnection = (HttpsURLConnection) url.openConnection();
             httpsURLConnection.setConnectTimeout(10 * 1000);
