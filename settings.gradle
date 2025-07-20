@@ -15,4 +15,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "NitterizeMe"
+
 include(":app")

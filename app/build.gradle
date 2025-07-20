@@ -5,74 +5,78 @@ plugins {
 
 android {
     namespace 'app.fedilab.nitterizeme'
-    compileSdk 34
+    compileSdk = 34
 
     defaultConfig {
-        applicationId "app.fedilab.nitterizeme"
-        minSdk 21
-        targetSdk 34
-        versionCode 33
-        versionName "1.30.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        applicationId = "app.fedilab.nitterizeme"
+        minSdk = 21
+        targetSdk = 34
+        versionCode = 33
+        versionName = "1.30.0"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildFeatures {
-        viewBinding true
+        viewBinding = true
+        buildConfig = true
     }
 
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-
-    flavorDimensions "default"
+    flavorDimensions += "default"
 
     productFlavors {
         fullLinks {
-            applicationId "app.fedilab.nitterizeme"
-            buildConfigField "boolean", "fullLinks", "true"
+            applicationId = "app.fedilab.nitterizeme"
+            buildConfigField("boolean", "fullLinks", "true")
         }
         lite {
-            applicationId "app.fedilab.nitterizemelite"
-            buildConfigField "boolean", "fullLinks", "false"
+            applicationId = "app.fedilab.nitterizemelite"
+            buildConfigField("boolean", "fullLinks", "false")
         }
     }
 
     sourceSets {
         lite {
-            manifest.srcFile "src/main/AndroidManifest.xml"
+            manifest.srcFile("src/main/AndroidManifest.xml")
         }
         fullLinks {
-            manifest.srcFile "src/fullLinks/AndroidManifest.xml"
+            manifest.srcFile("src/fullLinks/AndroidManifest.xml")
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 
     lint {
-        disable 'MissingTranslation'
-        checkReleaseBuilds false
-        abortOnError false
+        disable += ['MissingTranslation']
+        checkReleaseBuilds = false
+        abortOnError = false
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: "libs", include: ["*.jar"])
 
-    implementation 'androidx.appcompat:appcompat:1.7.1'
-    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
-    implementation 'com.google.android.material:material:1.12.0'
-    implementation 'androidx.preference:preference:1.2.1'
-    implementation 'org.jsoup:jsoup:1.21.1'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation "androidx.appcompat:appcompat:1.7.1"
+    implementation "androidx.localbroadcastmanager:localbroadcastmanager:1.1.0"
+    implementation "androidx.constraintlayout:constraintlayout:2.2.1"
+    implementation "com.google.android.material:material:1.12.0"
+    implementation "androidx.preference:preference:1.2.1"
+    implementation "org.jsoup:jsoup:1.21.1"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
 
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test.ext:junit:1.2.1"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.6.1"
 }
