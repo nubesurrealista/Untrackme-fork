@@ -41,7 +41,7 @@ import app.fedilab.nitterizeme.viewmodels.SearchInstanceVM;
 
 public class InstanceActivity extends AppCompatActivity {
 
-    private static final String list_for_instances = "https://framagit.org/tom79/fedilab_app/-/blob/master/content/untrackme_instances/payload_3.json";
+    private static final String list_for_instances = "https://github.com/nubesurrealista/Untrackme-fork/blob/develop/content/payload.json";
     private ActivityPopupInstanceBinding binding;
 
     @Override
