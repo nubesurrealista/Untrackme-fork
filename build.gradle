@@ -1,18 +1,20 @@
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
-
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+buildscript {
     repositories {
         google()
         mavenCentral()
     }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.11.1'
+    }
 }
 
-rootProject.name = "nitterizeme"
-include(":app")
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
