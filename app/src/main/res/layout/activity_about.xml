@@ -109,7 +109,7 @@
                         android:id="@+id/developer_mastodon"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="\@apps@toot.fedilab.app"
+                        android:text="\@nube@verse.averagedood.xyz"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
@@ -121,11 +121,11 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/framagit"
+                            android:id="@+id/linkpage"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="15dp"
-                            android:text="Framagit"
+                            android:text="Links"
                             android:textSize="16sp"
                             tools:ignore="HardcodedText" />
 
@@ -253,7 +253,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_weight="3"
                 android:autoLink="web"
-                android:text="https://framagit.org/tom79/nitterizeme"
+                android:text="https://github.com/nubesurrealista/Untrackme-fork"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
 
@@ -278,7 +278,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_weight="3"
                 android:autoLink="web"
-                android:text="https://framagit.org/tom79/nitterizeme/issues"
+                android:text="https://github.com/nubesurrealista/Untrackme-fork/issues"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
 

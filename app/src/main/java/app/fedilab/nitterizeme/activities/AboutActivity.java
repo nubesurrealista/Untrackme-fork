@@ -81,12 +81,12 @@ public class AboutActivity extends AppCompatActivity {
             startActivity(browserIntent);
         });
 
-        //Developer Framagit
-        content = new SpannableString(binding.framagit.getText().toString());
+        //Developer Links
+        content = new SpannableString(binding.linkpage.getText().toString());
         content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
-        binding.framagit.setText(content);
-        binding.framagit.setOnClickListener(v -> {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://framagit.org/tom79"));
+        binding.linkpage.setText(content);
+        binding.linkpage.setOnClickListener(v -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://nube.codeberg.page/links/"));
             startActivity(browserIntent);
         });
 
