@@ -8,7 +8,6 @@
         tools:ignore="QueryAllPackagesPermission" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -36,16 +35,12 @@
             android:name=".activities.TransformActivity"
             android:noHistory="true"
             android:targetActivity=".activities.TransformActivity"
-            android:theme="@style/Theme.AppCompat.Translucent">
-            <!-- The app should handle these domains, more can be added here -->
-
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
-                <!-- SHORTENED URLs  -->
                 <data android:host="t.co" />
                 <data android:host="vxtwitter.com" />
                 <data android:host="nyti.ms" />
@@ -66,13 +61,9 @@
                 <data android:host="maps.app.goo.gl" />
                 <data android:host="vm.tiktok.com" />
                 <data android:host="vt.tiktok.com" />
-
-                <!-- INSTAGRAM URLs  -->
                 <data android:host="instagram.com" />
                 <data android:host="www.instagram.com" />
                 <data android:host="m.instagram.com" />
-
-                <!-- TWITTER URLs  -->
                 <data android:host="mobile.twitter.com" />
                 <data android:host="www.twitter.com" />
                 <data android:host="twitter.com" />
@@ -81,15 +72,11 @@
                 <data android:host="x.com" />
                 <data android:host="pbs.twimg.com" />
                 <data android:host="pic.twitter.com" />
-
-                <!-- YOUTUBE URLs  -->
                 <data android:host="www.youtube.com" />
                 <data android:host="m.youtube.com" />
                 <data android:host="youtube.com" />
                 <data android:host="youtu.be" />
                 <data android:host="youtube-nocookie.com" />
-
-                <!-- REDDIT URLs  -->
                 <data android:host="www.reddit.com" />
                 <data android:host="reddit.com" />
                 <data android:host="i.reddit.com" />
@@ -97,21 +84,15 @@
                 <data android:host="old.reddit.com" />
                 <data android:host="preview.redd.it" />
                 <data android:host="*.reddit.com" />
-
-                <!-- TIKTOK URLs  -->
                 <data android:host="tiktok.com" />
                 <data android:host="www.tiktok.com" />
                 <data android:host="us.tiktok.com" />
-
-                <!-- INVIDIOUS INSTANCES -->
                 <data android:host="invidious.snopyta.org" />
                 <data android:host="invidiou.sh" />
                 <data android:host="invidious.toot.koeln" />
                 <data android:host="invidious.ggc-project.de" />
                 <data android:host="invidious.13ad.de" />
                 <data android:host="yewtu.be" />
-
-                <!-- NITTER INSTANCES -->
                 <data android:host="nitter.net" />
                 <data android:host="nitter.snopyta.org" />
                 <data android:host="nitter.42l.fr" />
@@ -122,41 +103,27 @@
                 <data android:host="nitter.mastodont.cat" />
                 <data android:host="nitter.dark.fail" />
                 <data android:host="nitter.tedomum.net" />
-
-                <!-- BIBLIOGRAM INSTANCES -->
                 <data android:host="bibliogram.art" />
                 <data android:host="bibliogram.snopyta.org" />
                 <data android:host="bibliogram.dsrev.ru" />
                 <data android:host="bibliogram.pussthecat.org" />
-
-                <!-- PROXITOK INSTANCES -->
                 <data android:host="proxitok.pabloferreiro.es" />
                 <data android:host="proxitok.privacydev.net" />
                 <data android:host="proxitok.pussthecat.org" />
-
-                <!-- MEDIUM URLs  -->
                 <data android:host="www.medium.com" />
                 <data android:host="medium.com" />
                 <data android:host="*.medium.com" />
-
-
-                <!-- WIKIPEDIA URLs  -->
                 <data android:host="wikipedia.org" />
                 <data android:host="www.wikipedia.org" />
                 <data android:host="*.wikipedia.org" />
-
                 <data android:host="*" />
                 <data android:pathPattern=".*" />
                 <data android:scheme="https" />
                 <data android:scheme="http" />
             </intent-filter>
-
-            <!-- SHARING HANDLE -->
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />
-
-                <!-- SHORTENED URLs  -->
                 <data android:host="t.co" />
                 <data android:host="vxtwitter.com" />
                 <data android:host="nyti.ms" />
@@ -178,13 +145,9 @@
                 <data android:host="maps.app.goo.gl" />
                 <data android:host="vm.tiktok.com" />
                 <data android:host="vt.tiktok.com" />
-
-                <!-- INSTAGRAM URLs  -->
                 <data android:host="instagram.com" />
                 <data android:host="www.instagram.com" />
                 <data android:host="m.instagram.com" />
-
-                <!-- TWITTER URLs  -->
                 <data android:host="mobile.twitter.com" />
                 <data android:host="www.twitter.com" />
                 <data android:host="twitter.com" />
@@ -192,16 +155,11 @@
                 <data android:host="www.x.com" />
                 <data android:host="x.com" />
                 <data android:host="pbs.twimg.com" />
-
-                <!-- YOUTUBE URLs  -->
                 <data android:host="www.youtube.com" />
                 <data android:host="m.youtube.com" />
                 <data android:host="youtube.com" />
                 <data android:host="youtu.be" />
                 <data android:host="youtube-nocookie.com" />
-
-
-                <!-- REDDIT URLs  -->
                 <data android:host="www.reddit.com" />
                 <data android:host="reddit.com" />
                 <data android:host="i.reddit.com" />
@@ -209,35 +167,22 @@
                 <data android:host="old.reddit.com" />
                 <data android:host="preview.redd.it" />
                 <data android:host="*.reddit.com" />
-
-                <!-- MEDIUM URLs  -->
                 <data android:host="www.medium.com" />
                 <data android:host="medium.com" />
                 <data android:host="*.medium.com" />
-
-                <!-- WIKIPEDIA URLs  -->
                 <data android:host="wikipedia.org" />
                 <data android:host="www.wikipedia.org" />
                 <data android:host="*.wikipedia.org" />
-
-                <!-- TIKTOK URLs  -->
                 <data android:host="tiktok.com" />
                 <data android:host="www.tiktok.com" />
                 <data android:host="us.tiktok.com" />
-
                 <data android:host="*" />
-
                 <data android:mimeType="text/plain" />
             </intent-filter>
-
-            <!-- MAPS URLs  -->
-            <!-- /maps/ -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
                 <data android:host="*" />
                 <data android:pathPattern="/maps/place/.*" />
                 <data android:scheme="https" />
@@ -251,15 +196,10 @@
                     android:mimeType="text/plain"
                     android:pathPattern="/maps/place/.*" />
             </intent-filter>
-
-            <!-- AMP URLs  -->
-            <!-- /amp/ -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
                 <data android:host="*" />
                 <data android:pathPattern="/amp/s/.*" />
                 <data android:scheme="https" />
@@ -273,42 +213,46 @@
                     android:mimeType="text/plain"
                     android:pathPattern="/amp/s/.*" />
             </intent-filter>
-
         </activity-alias>
         <activity-alias
             android:name=".activities.AppsPickerActivity"
             android:noHistory="true"
             android:targetActivity=".activities.AppsPickerActivity"
-            android:theme="@style/Theme.AppCompat.Translucent" />
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:exported="false" />
         <activity-alias
             android:name=".activities.InstanceActivity"
             android:excludeFromRecents="true"
             android:targetActivity=".activities.InstanceActivity"
-            android:theme="@style/AppThemeDialog" />
+            android:theme="@style/AppThemeDialog"
+            android:exported="false" />
         <activity-alias
             android:name=".activities.AboutActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
             android:targetActivity=".activities.AboutActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:exported="false" />
         <activity-alias
             android:name=".activities.CheckAppActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
             android:targetActivity=".activities.CheckAppActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:exported="false" />
         <activity-alias
             android:name=".activities.DefaultAppActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
             android:targetActivity=".activities.DefaultAppActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:exported="false" />
         <activity-alias
             android:name=".activities.InvidiousSettingsActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/invidious_settings"
             android:targetActivity=".activities.InvidiousSettingsActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:exported="false" />
     </application>
-
 </manifest>
